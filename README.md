@@ -119,7 +119,13 @@ curl http://localhost:8000/predict/1     # Test FastAPI endpoint
 airflow webserver --port 8080            # Airflow UI (after setup)
 airflow scheduler                        # Airflow job runner
 streamlit run dashboard/app.py           # Launch dashboard (after setup)
+py -m streamlit run dashboard/app.py     # Launch dashboard (Windows alternative)
 ```
+
+## Dashboard
+To run the interactive dashboard:
+1. Ensure database is set up.
+2. Run: `py -m streamlit run dashboard/app.py`
 
 ***
 
